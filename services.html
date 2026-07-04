@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Perfect Plumbing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header (copy from index.html) -->
+    <header>
+        <nav>
+            <div class="logo"><i class="fas fa-wrench"></i> Perfect Plumbing</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div onclick="toggleCart()" style="cursor:pointer; position:relative; font-size:1.6rem;">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count" style="position:absolute;top:-8px;right:-8px;background:#ff0000;color:white;border-radius:50%;padding:2px 7px;font-size:0.8rem;">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2>Our Professional Services</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGSY8ENOpxCq0unkjx2wHEIXEhM81MRcBrHuUgU9kZb1xUep-q4NRCfZ-aj4yp82m73ekaEC4c9b8QULlzdhWkbgcod3b_VhMfj04-MKp8tPFNcbX-ZQH2k-Ci696ukNRyiyefTaQ=s680-w680-h510" alt="Pipes">
+                    <div class="card-body">
+                        <h3>Pipe Installation & Repair</h3>
+                        <p>Residential & Commercial</p>
+                        <strong>From ₦15,000</strong>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGfBXnRgoFYHRONbCOw_RlqiDb4w36j8RgkNCH6nNiP-HgVyz48UKy7aoJavMIXHJHGjGy_IwaG4Fpm7sl9IOlbkmAxP_GmLU8OQoiqHdu4PUTmRymSucEG4jHC_WrbentkReI=s680-w680-h510" alt="Leak">
+                    <div class="card-body">
+                        <h3>Leak Detection & Fixing</h3>
+                        <p>Advanced technology</p>
+                        <strong>From ₦8,000</strong>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGAynT48FiYjCHW6J1wHncLyOxOxd9Z_oox41AVYMJtTumsSxCFcO7PQ4y-xq2LNNVtARPVXwChRpYQT5JIb2NQHzJdOqNJMmN-y2hphNbkfcpdThUz_bq5avqS9ZnXxjT6wbbu-6HNknBQ=s680-w680-h510" alt="Fixtures">
+                    <div class="card-body">
+                        <h3>Bathroom & Kitchen Fixtures</h3>
+                        <p>Sinks, Toilets, Showers</p>
+                        <strong>From ₦12,000</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background:#222; color:#ddd; text-align:center; padding:40px 20px;">
+        <p><strong>Phone:</strong> 08128038418 | 33 Williams Crescent, Abuja</p>
+    </footer>
+
+    <div id="cart" class="cart"> <!-- Same cart code as index.html --> </div>
+    <script src="script.js"></script>
+</body>
+</html>
