@@ -18,7 +18,7 @@
                 <li><a href="about.html" class="active">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div onclick="toggleCart()" style="cursor:pointer; position:relative; font-size:1.6rem;">
+            <div onclick="toggleCart()" style="cursor:pointer;position:relative;font-size:1.6rem;">
                 <i class="fas fa-shopping-cart"></i>
                 <span id="cart-count" style="position:absolute;top:-8px;right:-8px;background:#ff0000;color:white;border-radius:50%;padding:2px 7px;font-size:0.8rem;">0</span>
             </div>
@@ -28,46 +28,24 @@
     <section>
         <div class="container">
             <h2>About Perfect Plumbing Services</h2>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:40px;align-items:center;">
                 <div>
-                    <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFVeC8amx4XU73bNggdo7mjkDNqh9u0_f37J3fvLaQNwApvHEuGuHpzEuUDAquXrJZkeLMcYqy5Yaahc27g0phwV126YF2BD3t1zUP8p3Zn39Q3OAyezPoM3R9ZH15BeleCeG2R=s680-w680-h510" alt="Our Work" style="width:100%; border-radius:15px;">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFVeC8amx4XU73bNggdo7mjkDNqh9u0_f37J3fvLaQNwApvHEuGuHpzEuUDAquXrJZkeLMcYqy5Yaahc27g0phwV126YF2BD3t1zUP8p3Zn39Q3OAyezPoM3R9ZH15BeleCeG2R=s680-w680-h510" style="width:100%;border-radius:15px;">
                 </div>
                 <div>
-                    <p style="font-size:1.2rem; line-height:1.8;">
-                        With years of experience serving Abuja, Perfect Plumbing Services is your trusted partner for all plumbing needs. 
-                        Our team of certified professionals delivers quality workmanship with honesty and speed.
+                    <p style="font-size:1.2rem;line-height:1.8;">
+                        We are a trusted plumbing company in Abuja with years of experience. 
+                        Our certified technicians provide reliable, fast and professional services.
                     </p>
-                    <ul style="margin-top:30px; font-size:1.1rem; line-height:2.2;">
-                        <li><i class="fas fa-check" style="color:#28a745;"></i> Licensed & Fully Insured</li>
-                        <li><i class="fas fa-check" style="color:#28a745;"></i> 24/7 Emergency Response</li>
-                        <li><i class="fas fa-check" style="color:#28a745;"></i> Competitive & Transparent Pricing</li>
-                        <li><i class="fas fa-check" style="color:#28a745;"></i> Customer Satisfaction Guaranteed</li>
-                    </ul>
-                    <p style="margin-top:30px;"><strong>Address:</strong> 33 Williams Crescent, Abuja 900108</p>
+                    <p style="margin-top:20px;"><strong>Phone:</strong> 08128038418</p>
+                    <p><strong>Address:</strong> 33 Williams Crescent, Abuja 900108</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer style="background:#222; color:#ddd; text-align:center; padding:40px 20px;">
-        <p>&copy; 2026 Perfect Plumbing Services</p>
-    </footer>
-
-    <div id="cart" class="cart">
-        <div class="cart-header">
-            <h3>Your Cart</h3>
-            <span onclick="toggleCart()" style="cursor:pointer; font-size:1.8rem;">×</span>
-        </div>
-        <div id="cart-items"></div>
-        <div style="padding:20px; border-top:1px solid #eee;">
-            <div style="display:flex;justify-content:space-between;font-weight:bold;margin-bottom:15px;">
-                <span>Total:</span>
-                <span id="cart-total">₦0</span>
-            </div>
-            <button onclick="checkout()" style="width:100%;padding:15px;background:#28a745;color:white;border:none;border-radius:50px;">Checkout</button>
-        </div>
-    </div>
-
+    <footer>© 2026 Perfect Plumbing Services</footer>
+    <div id="cart" class="cart"> <!-- Same as shop.html --> </div>
     <script src="script.js"></script>
 </body>
 </html>
