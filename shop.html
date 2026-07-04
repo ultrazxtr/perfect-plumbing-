@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Perfect Plumbing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header same as above with active link on Shop -->
+    <header>
+        <nav>
+            <div class="logo"><i class="fas fa-wrench"></i> Perfect Plumbing</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div onclick="toggleCart()" style="cursor:pointer; position:relative; font-size:1.6rem;">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count" style="position:absolute;top:-8px;right:-8px;background:#ff0000;color:white;border-radius:50%;padding:2px 7px;font-size:0.8rem;">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2>Plumbing Products</h2>
+            <div class="grid" id="products">
+                <!-- Populated by script.js -->
+            </div>
+        </div>
+    </section>
+
+    <footer style="background:#222; color:#ddd; text-align:center; padding:40px 20px;">
+        <p>Call 08128038418 for bulk orders</p>
+    </footer>
+
+    <div id="cart" class="cart"> <!-- Same cart HTML as index --> </div>
+    <script src="script.js"></script>
+</body>
+</html>
