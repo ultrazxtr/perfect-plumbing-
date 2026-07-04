@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop - Perfect Plumbing</title>
+    <title>Shop - Perfect Plumbing Abuja</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header same as above with active link on Shop -->
     <header>
         <nav>
             <div class="logo"><i class="fas fa-wrench"></i> Perfect Plumbing</div>
@@ -19,7 +18,7 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div onclick="toggleCart()" style="cursor:pointer; position:relative; font-size:1.6rem;">
+            <div onclick="toggleCart()" style="cursor:pointer;position:relative;font-size:1.6rem;">
                 <i class="fas fa-shopping-cart"></i>
                 <span id="cart-count" style="position:absolute;top:-8px;right:-8px;background:#ff0000;color:white;border-radius:50%;padding:2px 7px;font-size:0.8rem;">0</span>
             </div>
@@ -28,18 +27,28 @@
 
     <section>
         <div class="container">
-            <h2>Plumbing Products</h2>
-            <div class="grid" id="products">
-                <!-- Populated by script.js -->
-            </div>
+            <h2>Plumbing Products & Supplies</h2>
+            <div class="grid" id="products"></div>
         </div>
     </section>
 
-    <footer style="background:#222; color:#ddd; text-align:center; padding:40px 20px;">
-        <p>Call 08128038418 for bulk orders</p>
-    </footer>
+    <footer>© 2026 Perfect Plumbing Services • 08128038418</footer>
 
-    <div id="cart" class="cart"> <!-- Same cart HTML as index --> </div>
+    <div id="cart" class="cart">
+        <div style="padding:15px;background:#007bff;color:white;display:flex;justify-content:space-between;">
+            <h3>Your Cart</h3>
+            <span onclick="toggleCart()" style="cursor:pointer;font-size:1.8rem;">×</span>
+        </div>
+        <div id="cart-items"></div>
+        <div style="padding:20px;">
+            <div style="display:flex;justify-content:space-between;font-weight:bold;margin-bottom:15px;">
+                <span>Total:</span>
+                <span id="cart-total">₦0</span>
+            </div>
+            <button onclick="checkout()" style="width:100%;padding:15px;background:#28a745;color:white;border:none;border-radius:50px;">Checkout</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
